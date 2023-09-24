@@ -3,5 +3,10 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    for i in items:
+        item = str(i)
+        val = 1
+        if item in frequencies:
+            val = frequencies.get(item) + 1
+        frequencies.update({item:val})
     return frequencies
